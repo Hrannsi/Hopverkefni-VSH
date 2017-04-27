@@ -23,3 +23,13 @@ header{
 .gif{
     width: 170px;
 }
+
+/*Síða 2*/
+.fyrirsogn {
+    text-align: center;
+    color: blue;
+}
+
+p {
+    font-size: 18px;
+}
