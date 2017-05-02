@@ -40,3 +40,23 @@ picture{
 .api{
     width: 170em;
 }
+section{
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+}
+.form{
+    background-color: crimson;
+    position: relative;
+    padding: 1em;
+    width: 50%;
+    order: 2;
+}
+.dagskra{
+    background-color: aqua;
+    width: 25%;
+    position: relative;
+    text-align: center;
+    max-width: 25%;
+    order: 1;
+}
