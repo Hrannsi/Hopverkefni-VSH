@@ -40,7 +40,20 @@ picture{
 .api{
     width: 170em;
 }
-section{
+
+.fyrirsogn {
+    margin: 0 auto;
+    color: blue;
+    padding: 1em
+}
+
+.text {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 60em;
+}
+
+.forms{
     display: flex;
     flex-flow: row;
     text-align: center;
