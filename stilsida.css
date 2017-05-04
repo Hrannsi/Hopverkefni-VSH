@@ -5,6 +5,8 @@ body {
 	max-width: 60em;
     margin:0 auto;
 	padding: 0 1em 1em;
+    background-color: gray;
+    
 }
 header{
     margin: 0 auto;
@@ -86,5 +88,55 @@ picture{
 .menu {
     width: 100%;
     background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+}
 
+.body {
+    background-color: white;
+    border: opx white solid;
+    border-radius: 10px;
+}
+
+nav{
+	display: flex;
+	background-color: gray;
+	flex-direction: column;
+    border: 1px gray solid;
+    border-radius: 6px;
+}
+nav ul{
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	justify-content: flex-start;
+}
+
+li{
+	margin: 0 auto;
+
+}
+
+nav a{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 0.1px;
+}
+
+.logo2 {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 500px;  
+    top: -65.5px;
+    left: -50px
+}
+
+.gif2 {
+    display: flex;
+    position: relative;
+    top: 16.3px;
+    left: 59px
+}
 }
