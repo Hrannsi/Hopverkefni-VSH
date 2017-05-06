@@ -5,7 +5,7 @@ body {
 	max-width: 60em;
     margin:0 auto;
 	padding: 0 1em 1em;
-    background-color: gray;
+    background-image: url(WIpjtow.jpg)
 }
 header{
     margin: 0 auto;
@@ -33,10 +33,12 @@ header{
 .fyrirsogn {
     text-align: center;
     color: blue;
+    font-size: 30px;
+    
 }
 
 p {
-    font-size: 18px;
+    font-size: 28px;
 }
 picture{
     width: 170px;
@@ -51,76 +53,78 @@ picture{
     padding: 1em
 }
 
+/*Síða 3*/
 .forms{
     display: flex;
     flex-flow: row;
     text-align: center;
 }
 .form{
-    background-color: crimson;
     position: relative;
     padding: 1em;
     width: 50%;
     order: 2;
 }
 .dagskra{
-    background-color: aqua;
-    width: 25%;
+    width: 36%;
     position: relative;
-    text-align: center;
-    max-width: 25%;
     order: 1;
+    text-align: left;
+    font-size: 13px;
 }
 
-@media screen and (min-width: 64em){
-    .body{
-        background-color: aqua;
-    }
-}
 
+/*Menu og linkar*/
 .menu {
     width: 100%;
-    background-color: lightblue;
-    border: 1px solid lightblue;
+    background-color: lightgoldenrodyellow;
+    border-top: 1px solid lightblue;
     border-radius: 10px;
-
-}
-nav{
-	display: flex;
-	background-color: gray;
-	flex-direction: column;
-}
-nav ul{
-	display: flex;
-	list-style-type: none;
-	padding: 0;
-	justify-content: flex-start;
 }
 
-li{
-	margin: 0 auto;
-
+.linksection {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    background-color: green;
 }
 
-nav a{
-	text-decoration: none;
-	text-align: center;
-	display: block;
-	padding: 0.1px;
+section ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+section li {
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+.dropdown {
+    visibility: hidden;
 }
 .text {
-    display: flex
+    display: flex;
+    margin: 0 1em;
+    flex-flow: row;
 }
 .umtext{
     position: relative;
     width: 75%;
     order: 1;
+    background-color: white;
 }
-.add{
+.littletext{
+    position: relative;
+    width: 90%;
+    left: 1em;
+}
+.ad{
     position: relative;
     width: 25%;
     order: 2;
-    background-color: darkturquoise;
+    
 }
 .logo2 {
     display: flex;
@@ -140,13 +144,59 @@ nav a{
 .body {
     background-color: white;
     border: opx white solid;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 .text2 {
     font-size: 18px;
     margin: 0 auto;
     max-width: 60em;
 }
+@media screen and (max-width: 63em) {
+    body {
+        background-color: black;
+    }
+    .dropdown {
+        visibility: visible;
+    }
+    .linksection {background-color: green;}
+    section a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 15px;
+        display:inline-block;
+    }
+    ul {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    ul li {display: inline-block;}
+    ul li:hover {background: black;}
+    ul li:hover ul {display: block;}
+    ul li ul {
+        position: absolute;
+        width: 200px;
+        display: none;
+    }
+    ul li ul li { 
+        background: black; 
+        display: block; 
+    }
+    ul li ul li a {display:block !important;} 
+    ul li ul li:hover {background: black;}
+}
+
+
+/*Ad og animation*/
+.add{
+    position: relative;
+    width: 25%;
+    order: 2;
+    background-color: white;
+    left: 1em;
+}
+
 .scary{
     position: absolute;
     width: 200px;
@@ -222,4 +272,157 @@ nav a{
     left: 1em;
     width: 140px;
     height: 140px;
+}
+
+.text2 {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 60em;
+    width: 75%;
+    position: relative;
+    order: 1;
+    
+}
+.section2{
+    display: flex;
+}
+.add2{
+    position: relative;
+    width: 25%;
+    order: 2;
+    background-color: aqua;
+}
+.ad2{
+    position: relative;
+    left: 1em;
+    top: -0.5em;
+    background-color: rgb(0, 15, 193);
+    width: 85%;
+    height: 30em;
+}
+.adbox2{
+    display: flex;
+    position: relative;
+    margin: 0.5em auto;
+    width: 95%;
+    padding: 0.5em;
+    background-color: rgba(54, 77, 255, 0.61);
+    border-style: solid;
+    text-decoration: none;
+    justify-content: center;
+}
+.adbox2:hover{
+    border-color: #00ff31;
+}
+.arionpic{
+    position: relative;
+    top: 1.5em;
+    left: 1.4em;
+    width: 130px;
+}
+.add3{
+    position: relative;
+    width: 25%;
+    order: 3;
+    background-color: rgb(38, 193, 50);
+}
+.ad3{
+    position: relative;
+    left: 1em;
+    top: -0.5em;
+    background-color: #d47a38;
+    width: 85%;
+    height: 30em;
+}
+.adbox3{
+    display: flex;
+    position: relative;
+    margin: 0.5em auto;
+    width: 95%;
+    padding: 0.5em;
+    background-color: #d47a38;
+    border-style: solid;
+    text-decoration: none;
+    justify-content: center;
+}
+.adlogo3{
+    position: relative;
+    width: 100px;
+    top: 1.8em;
+}
+.adbox3:hover{
+    border-color: #009a88;
+}
+
+.text2 {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 60em;
+    width: 75%;
+    position: relative;
+    order: 1;
+}
+
+.section2{
+    display: flex;
+}
+.myndir{
+    display: flex;
+    height: 20.5em;
+}
+.mynd1{
+    position: relative;
+    height: 300px;
+    width: 480px;
+    margin: 1em auto;
+    border: 0.4em;
+    border-style: dotted;
+}
+.mynd2{
+    position: relative;
+    height: 300px;
+    width: 310px;
+    margin: 1em auto;
+        border: 0.4em;
+    border-style: dotted;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav{
+	display: flex;
+	background-color: lightblue;
+	flex-direction: column;
+}
+nav ul{
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	justify-content: flex-start;
+}
+
+li{
+	margin: 0 auto;
+
+}
+
+nav a{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 0.1px;
 }
