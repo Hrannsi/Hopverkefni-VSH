@@ -20,13 +20,15 @@ header{
     margin: 0 auto;
     width: 500px;
     top: 45px;
-    left: -50px
+    left: -50px;
+    z-index: 1;
 }
 .gif{
     display: flex;
     position: relative;
     top: -45px;
-    left: 59px
+    left: 59px;
+    z-index: 1;
 }
 
 /*Síða 2*/
@@ -53,10 +55,10 @@ picture{
     padding: 1em
 }
 
-/*Síða 3*/
 .forms{
     display: flex;
     flex-flow: row;
+    background-image: url(rsz_mario.jpg);
     text-align: center;
 }
 .form{
@@ -64,17 +66,16 @@ picture{
     padding: 1em;
     width: 50%;
     order: 2;
+     color: white;
 }
 .dagskra{
     width: 36%;
     position: relative;
-    order: 1;
     text-align: left;
-    font-size: 13px;
+    order: 1;
+     color: white;
 }
 
-
-/*Menu og linkar*/
 .menu {
     width: 100%;
     background-color: lightgoldenrodyellow;
@@ -113,7 +114,6 @@ section li {
     position: relative;
     width: 75%;
     order: 1;
-    background-color: white;
 }
 .littletext{
     position: relative;
@@ -139,7 +139,7 @@ section li {
     display: flex;
     position: relative;
     top: 16.3px;
-    left: 59px
+    left: 59px;
 }
 .body {
     background-color: white;
@@ -151,50 +151,14 @@ section li {
     margin: 0 auto;
     max-width: 60em;
 }
-@media screen and (max-width: 63em) {
-    body {
-        background-color: black;
-    }
-    .dropdown {
-        visibility: visible;
-    }
-    .linksection {background-color: green;}
-    section a {
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        padding: 15px;
-        display:inline-block;
-    }
-    ul {
-        display: inline;
-        margin: 0;
-        padding: 0;
-    }
-    ul li {display: inline-block;}
-    ul li:hover {background: black;}
-    ul li:hover ul {display: block;}
-    ul li ul {
-        position: absolute;
-        width: 200px;
-        display: none;
-    }
-    ul li ul li { 
-        background: black; 
-        display: block; 
-    }
-    ul li ul li a {display:block !important;} 
-    ul li ul li:hover {background: black;}
-}
 
-
-/*Ad og animation*/
 .add{
     position: relative;
     width: 25%;
     order: 2;
     background-color: white;
     left: 1em;
+    z-index: 1;
 }
 
 .scary{
@@ -203,14 +167,20 @@ section li {
     animation-name: scarygif;
     animation-duration: 20s;
     transform: scaleX(-1);
-    animation-delay: 10s;
-    
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 @-webkit-keyframes scarygif {
-    0%   {left: 31em;}
+    0%   {left: 36em;}
     25%  {left: 140em;}
     75%  {transform: scale(1); top:35em; left: 50em;}
+    100%  {transform: scale(1); top:35em; left: 50em;}
+}
+
+.scary:hover{
+    animation-name: sdasds;
 }
 
 
@@ -290,7 +260,6 @@ section li {
     position: relative;
     width: 25%;
     order: 2;
-    background-color: aqua;
 }
 .ad2{
     position: relative;
@@ -386,8 +355,19 @@ section li {
         border: 0.4em;
     border-style: dotted;
 }
+.mynd3{
+    position: relative;
+    height: 300px;
+    width: 250px;
+    margin: 1em auto;
+        border: 0.4em;
+    border-style: dotted;
+}
 
-
+.linkbox1{
+    width: 10em;
+    background-color: aqua
+}
 
 
 
