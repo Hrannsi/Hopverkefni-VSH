@@ -6,13 +6,12 @@ body {
     margin:0 auto;
 	padding: 0 1em 1em;
     background-color: gray;
-    
 }
 header{
     margin: 0 auto;
     position: relative;
     top: 0.54em;
-    max-width: 60em;
+    max-width: 60em;    
     
 }
 .logo{
@@ -52,12 +51,6 @@ picture{
     padding: 1em
 }
 
-.text {
-    font-size: 18px;
-    margin: 0 auto;
-    max-width: 60em;
-}
-
 .forms{
     display: flex;
     flex-flow: row;
@@ -90,20 +83,12 @@ picture{
     background-color: lightblue;
     border: 1px solid lightblue;
     border-radius: 10px;
-}
 
-.body {
-    background-color: white;
-    border: opx white solid;
-    border-radius: 10px;
 }
-
 nav{
 	display: flex;
 	background-color: gray;
 	flex-direction: column;
-    border: 1px gray solid;
-    border-radius: 6px;
 }
 nav ul{
 	display: flex;
@@ -123,7 +108,20 @@ nav a{
 	display: block;
 	padding: 0.1px;
 }
-
+.text {
+    display: flex
+}
+.umtext{
+    position: relative;
+    width: 75%;
+    order: 1;
+}
+.add{
+    position: relative;
+    width: 25%;
+    order: 2;
+    background-color: darkturquoise;
+}
 .logo2 {
     display: flex;
     position: relative;
@@ -139,4 +137,89 @@ nav a{
     top: 16.3px;
     left: 59px
 }
+.body {
+    background-color: white;
+    border: opx white solid;
+    border-radius: 10px;
+}
+.text2 {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 60em;
+}
+.scary{
+    position: absolute;
+    width: 200px;
+    animation-name: scarygif;
+    animation-duration: 20s;
+    transform: scaleX(-1);
+    animation-delay: 10s;
+    
+}
+
+@-webkit-keyframes scarygif {
+    0%   {left: 31em;}
+    25%  {left: 140em;}
+    75%  {transform: scale(1); top:35em; left: 50em;}
+}
+
+
+
+.ad{
+    position: relative;
+    left: 1em;
+    top: -0.5em;
+    background-color: rgb(255, 0, 10);
+    width: 85%;
+    height: 30em;
+}
+.logoheader{
+    position: relative;
+    top: 1em;
+    text-align: center;
+    font-size: 25px;
+}
+.innriad{
+    
+    position: relative;
+    background-color: white;
+    width: 90%;
+    height: 85%;
+    top: 0.8em;
+    left: 0.6em;
+    
+}
+.adtexti{
+    position: relative;
+    width: 95%;
+    top: 1em;
+    left: 0.27em;
+    text-align: center;
+}
+.adboxcontainer{
+    position: relative;
+    top: 1em;
+    text-align: center;
+
+}
+.adbox{
+    display: flex;
+    position: relative;
+    margin: 0.5em auto;
+    width: 95%;
+    padding: 0.5em;
+    background-color: rgb(255, 0, 0);
+    border-style: solid;
+    text-decoration: none;
+    justify-content: center;
+}
+.adbox:hover{
+    border-color: #00d6fd;
+}
+.georg{
+    position: relative;
+    top: 0.5em;
+    left: 1em;
+    width: 140px;
+    height: 140px;
 }
